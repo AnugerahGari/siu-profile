@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+
+    <style>
+        body {
+            background-color: rgb(247, 247, 247);
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-size: 1rem;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 300px;
+            height: 400px;
+            padding: 20px;
+            gap: 10px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+
+        input {
+            border: 1px solid gainsboro;
+            background: white;
+            border-radius: 5px;
+            font-size: 1rem;
+            width: 80%;
+            padding: 8px;
+        }
+
+        input:focus {
+            color: #212529;
+            background-color: #fff;
+            border-color: #a855f7;
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem rgba(168, 85, 247, 0.25);
+        }
+
+
+        button {
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            width: 80%;
+            padding: 10px 15px;
+        }
+
+        button[type="submit"]:hover{
+            background-color: #8b44cd;
+        }
+
+        button[type="reset"]:hover{
+            background-color: whitesmoke;
+        }
+
+        .button-login {
+            font-weight: bold;
+            background-color: #a855f7;
+            color: white;
+
+        }
+
+        .button-reset {
+            border: 1px solid whitesmoke;
+            background-color: white;
+        }
+
+        input,
+        button {
+            box-sizing: border-box;
+        }
+
+        .forgot-password {
+            width: 80%;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="./index.html">
+        <div class="container">
+            <h1>Login</h1>
+            <p>Welcome back again 👋</p>
+            <input type="email" name="username" id="username" placeholder="Enter your email">
+            <input type="password" name="password" id="password" placeholder="Enter password">
+            <div class="forgot-password"><a href="">Forgot your password?</a></div>
+            <button class="button-login" type="submit">Sign in</button>
+            <button class="button-reset" type="reset">Reset</button>
+            <a href="./form_signup.html">Don't have an account yet? Sign up</a>
+        </div>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Signup</title>
+
+    <style>
+        body {
+            background-color: rgb(247, 247, 247);
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-size: 1rem;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 450px;
+            padding: 30px;
+            gap: 10px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+
+        input {
+            border: 1px solid gainsboro;
+            background: white;
+            border-radius: 5px;
+            font-size: 1rem;
+            outline-color: #a855f7;
+            padding: 8px;
+        }
+
+        input:focus {
+            color: #212529;
+            background-color: #fff;
+            border-color: #a855f7;
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem rgba(168, 85, 247, 0.25);
+        }
+
+        button {
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            width: 100%;
+            padding: 10px 15px;
+        }
+
+        .button-signup {
+            font-weight: bold;
+            background-color: #a855f7;
+            color: white;
+
+        }
+
+        .button-login {
+            border: 1px solid whitesmoke;
+            background-color: white;
+        }
+
+        input,
+        button {
+            box-sizing: border-box;
+        }
+
+        button[type="submit"]:hover{
+            background-color: #8b44cd;
+        }
+
+        table {
+            width: 100%;
+            text-align: left;
+            border-collapse: collapse;
+        }
+
+        table td {
+            padding: 5px 0px;
+        }
+
+        table input {
+            width: 100%;
+        }
+
+        select {
+            width: 100%;
+            font-size: 1rem;
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+            outline-color: #a855f7;
+            padding: 7px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="./index.html">
+        <div class="container">
+            <h1>Sign Up</h1>
+            <p>Create new account to continue ☺️</p>
+            <table>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" name="email" id="email" placeholder="Enter your email"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" name="password" id="password" placeholder="Enter new Password"></td>
+                </tr>
+                <tr>
+                    <td><label for="registration-number">Registration number</label></td>
+                    <td><input type="text" name="registration-number" id="registration-number"
+                            placeholder="Enter registration number"></td>
+                </tr>
+                <tr>
+                    <td><label for="nim">NIM</label></td>
+                    <td><input type="text" name="nim" id="nim" placeholder="Enter your NIM"></td>
+                </tr>
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" name="name" id="name" placeholder="Enter your name"></td>
+                </tr>
+                <tr>
+                    <td><label for="program">Program</label></td>
+                    <td><input type="text" name="program" id="program" placeholder="Enter your program"></td>
+                </tr>
+                <tr>
+                    <td><label for="ijazah-name">Name in IJAZAH</label></td>
+                    <td><input type="text" name="ijazah-name" id="ijazah-name" placeholder="Enter your ijazah name">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="financial-number">Financial Number</label></td>
+                    <td><input type="text" name="financial-number" id="financial-number"
+                            placeholder="Enter financial number"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td>
+                        <select name="gender" id="gender">
+                            <option value="male">Male</option>
+                            <option value="male">Female</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="birth">Place / Date of Birth</label></td>
+                    <td><input type="date" name="birth" id="birth" placeholder="Place / Date of Birth"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="academic-status">Academic Status</label></td>
+                    <td><input type="text" name="academic-status" id="academic-status" placeholder="Status Academic">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="religion">Religion</label></td>
+                    <td>
+                        <select name="religion" id="religion">
+                            <option value="single">Islam</option>
+                            <option value="married">Kristen</option>
+                            <option value="married">Hindu</option>
+                            <option value="married">Buddha</option>
+                            <option value="married">Konghucu</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="marital">Marital Status</label></td>
+                    <td>
+                        <select name="marital" id="marital">
+                            <option value="single">Single</option>
+                            <option value="married">Married</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="faculty">Faculty</label></td>
+                    <td><input type="text" name="faculty" id="faculty" placeholder="Enter your faculty"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="study">Program Study / Minor</label></td>
+                    <td><input type="text" name="study" id="study" placeholder="Enter your program study"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="curriculum">Curriculum Name</label></td>
+                    <td><input type="text" name="curriculum" id="curriculum" placeholder="Enter your curriculum"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="probation">Academic Probation</label></td>
+                    <td><input type="text" name="probation" id="probation" placeholder="Enter your academic probation">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="race">Race</label></td>
+                    <td><input type="text" name="race" id="race" placeholder="Enter your race"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="address">Address</label></td>
+                    <td><input type="text" name="address" id="address" placeholder="Enter your address"></td>
+                </tr>
+
+            </table>
+
+            <button class="button-signup" type="submit">Sign Up</button>
+            <a href="./form_login.html">Already have account? Sign in now</a>
+        </div>
+    </form>
+
+</body>
+
+</html>
